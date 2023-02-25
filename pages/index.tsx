@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import Footer from '@/components/Footer.tsx'
-import Header from '@/components/Header.tsx'
+import Footer from '@/components/Footer'
+import Header from '@/components/Header'
 import MainWindow from "@/components/MainWindow";
 import {list_of_questions} from "@/questions/list_of_questions"
 

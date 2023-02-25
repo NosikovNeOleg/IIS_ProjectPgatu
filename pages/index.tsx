@@ -15,12 +15,9 @@ export default function Home() {
         <title>IIS PGATU</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-        <Header>
-        </Header>
-        <MainWindow>
-        </MainWindow>
-        <Footer>
-        </Footer>
+        <Header/>
+        <MainWindow/>
+        <Footer/>
 
     </div>
   )

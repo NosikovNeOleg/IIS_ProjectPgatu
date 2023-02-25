@@ -12,7 +12,7 @@ export function GlobalAnswer({answer}: GlobalAnswerProps){
             <div>
                 <div className="text-center text-2xl font-mono">{answer?.text}</div>
                 <div className="topBorder"></div>
-                <div className="absolute top-50 text-center text-xl font-mono">{answer?.answer}</div>
+                <div className="absolute top-50 text-center text-xl font-mono">{answer?.answers}</div>
             </div>
             )
 }

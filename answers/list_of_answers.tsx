@@ -6,7 +6,7 @@ export const answers: IViewMain[] = [
             id: 1,
             code: "Answer1",
             text: "Ваш ответ",
-            answers: "Вообще песня"
+            answers: ["Вообще песня"]
 
         },
         {

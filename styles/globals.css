@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.mainWindow {
+    border: 3px solid black;
+    box-shadow: 0px 0px 35px gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70%;
+    width: 90%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border-top: 2px solid black;
+    box-shadow: 0 0 15px gray;
+    z-index: 2;
+
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border-bottom: 2px solid black;
+    box-shadow: 0 0 15px gray;
+    z-index: 2;
+}
+
+.answerButton {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, -89%);
+}
+.answerButton:hover {
+    position: absolute;
+    box-shadow: 1px 0px 8px #4682B4;
+    transform: translate(-50%, -89%) scale(1.1,1.1);
+}
+
+.answerButton:active {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -89%) scale(1,1);
+}
+
+.radios {
+    position: absolute;
+    left: 5%;
+}
+
+.topBorder{
+    border: 2px solid black;
+}
+
+

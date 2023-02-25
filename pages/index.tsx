@@ -7,6 +7,8 @@ import MainWindow from "@/components/MainWindow";
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
+    const Header = () => {}
   return (
     <div>
       <Head>

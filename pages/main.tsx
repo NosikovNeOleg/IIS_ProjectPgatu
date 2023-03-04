@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
-import WelcomeWindow from "@/windows/WelcomeWindow";
+import MainWindow from "@/windows/MainWindow";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,10 +14,11 @@ declare global {
 
 export default function Home() {
 
+
  
 
   return (
-  
+    
     <div>
       <Head>
         <title>IIS PGATU</title>
@@ -25,11 +26,13 @@ export default function Home() {
       </Head>
         <Header/>
         <div>
-         <WelcomeWindow/>
+        <MainWindow/>
+        
         </div>
+        
         <Footer/>
 
     </div>
-  
+    
   )
 }

@@ -64,24 +64,28 @@
 
 
 .answerButton {
-    margin-right: 20%;
+    margin-right: auto;
     margin-top: auto;
     bottom: 10px;
     left: 50%;
+    
     transform: translate(-50%);
+}
+
+.redirect{
+    
+    border: 2px solid black;
 }
 
 
 .answerButton:hover {
-    
     box-shadow: 1px 0px 8px #4682B4;
-    transform: translate(-50%) scale(1.1,1.1);
+    transform: translate(-50%);
 }
 
 .answerButton:active {
-    
     left: 50%;
-    transform: translate(-50%) scale(1,1);
+    transform: translate(-50%);
 }
 
 

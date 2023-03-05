@@ -1,4 +1,4 @@
-import { Button } from "@nextui-org/react";
+import { Button} from "@nextui-org/react";
 import  Link  from "next/link"
 
 
@@ -19,7 +19,15 @@ export default function WelcomeWindow() {
             <div className="welcomeText">
                 {greet2}
             </div>
-            <Button className="answerButton"><Link href={"/main"}> {buttonText}</Link></Button>
+            
+                
+           
+                <Button className="answerButton" auto ghost>
+                <Link href={"/main"} className="redirect" passHref>
+                    {buttonText}
+                    </Link>
+                </Button>
+            
         </div>
             )
             }

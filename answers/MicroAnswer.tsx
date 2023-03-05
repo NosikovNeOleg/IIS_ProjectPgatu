@@ -9,7 +9,7 @@ export function MicroAnswer( {answer} : MicroAnswerProp) {
     return (
     <div>
         <div className="microQuestion">
-            { "Вопрос "+ answer.id +": "+ answer?.text}
+            { "Вопрос "+ (Number(answer.id) + 1) +": "+ answer?.text}
         </div>
     
         <div className="microAnswer">

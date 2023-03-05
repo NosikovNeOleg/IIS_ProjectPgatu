@@ -50,7 +50,7 @@ export default function MainWindow( ) {
                             }
                         }}>{buttonText}</Button>
                             ) : ( null )
-                }<p>{id}</p>
+                }
                 
             </div>
             )

@@ -141,6 +141,96 @@ export var expertChoice: IViewMain[] = [
         text: "AndroidStudio + Java",
         answers: []
     },
+    {
+        id: 12512,
+        code: "12512",
+        text: ".Net + C#",
+        answers: []
+    },
+    {
+        id: 125112,
+        code: "125112",
+        text: ".Net + C# + MongoDB",
+        answers: []
+    },
+    {
+        id: 125111,
+        code: "125111",
+        text: ".Net + C# + PostgreSQL",
+        answers: []
+    },
+
+    {
+        id: 125212,
+        code: "125212",
+        text: "Java + Java EE",
+        answers: []
+    },
+    {
+        id: 1252112,
+        code: "1252112",
+        text: "Java + Java EE + MongoDB",
+        answers: []
+    },
+    {
+        id: 1252111,
+        code: "1252111",
+        text: "Java + Java EE + PostgreSQL",
+        answers: []
+    },
+    {
+        id: 125221,
+        code: "125221",
+        text: "Java + Java EE + PostgreSQL + Kafka",
+        answers: []
+    },
+    {
+        id: 125222,
+        code: "125222",
+        text: "Java + Sptring + PostgreSQL + RestAPI",
+        answers: []
+    },
+    {
+        id: 125223,
+        code: "125223",
+        text: "Java + Sptring + PostgreSQL + RabbitMQ",
+        answers: []
+    },
+    {
+        id: 131,
+        code: "131",
+        text: "JavaScript + React + WebStorm",
+        answers: []
+    },
+    {
+        id: 133,
+        code: "133",
+        text: "Node.Js + JavaScript + HTML + CSS",
+        answers: []
+    },
+    {
+        id: 1321,
+        code: "1321",
+        text: "Java + Eclipse",
+        answers: []
+    },
+    {
+        id: 1322,
+        code: "1322",
+        text: "Java + Sptring + PostgreSQL + RabbitMQ",
+        answers: []
+    },
+    {
+        id: 1323,
+        code: "1323",
+        text: "Python + PyCharm + PostreSQL",
+        answers: []
+    },
+
+    
+
+    
+    
 
     
     

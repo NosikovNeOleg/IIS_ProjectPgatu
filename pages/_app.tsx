@@ -1,13 +1,22 @@
 import "../styles/globals.css";
-import Component from "react";
-import { Router } from "next/router";
 
 
 
 function MyApp({Component, pageProps } : any) {
     return (
             <>
-            <Component {...pageProps} />
+    
+            <Component {...pageProps}/>
+
+            <style jsx global>
+                {`
+                html {
+                    background: rgba(203, 214, 255, 1);
+                }
+                `}
+               
+            </style>
+
             </>
             );
 

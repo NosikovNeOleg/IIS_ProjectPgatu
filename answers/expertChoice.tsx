@@ -4,13 +4,13 @@ export var expertChoice: IViewMain[] = [
     {
         id: 1111,
         code: "1111",
-        text: "Си",
+        text: "Язык программирования Си",
         answers: [],
     },
     {
         id: 1112,
         code: "1112",
-        text: "1C: Исполнитель + СУБД Линтер",
+        text: " 1C: Исполнитель + СУБД Линтер",
         answers: [],
     },
     {
@@ -22,7 +22,7 @@ export var expertChoice: IViewMain[] = [
     {
         id: 1111,
         code: "1111",
-        text: "Си",
+        text: "Язык программирования Си",
         answers: [],
     },
     {

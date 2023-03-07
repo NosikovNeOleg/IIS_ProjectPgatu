@@ -31,10 +31,11 @@ export function GlobalAnswer({answers, id}: GlobalAnswerProps){
                 answers?.map(answer => 
                     <MicroAnswer answer={answer}></MicroAnswer>
                 )}
-                <div className="">
-                    {answer.text}
+                <div className="topBorder"></div>
+                <div className="finalText">
+                    {"Исходя из вышеперечисленных ответов вам подойдёт: " + answer.text}
                 </div>
-                <Button className="answerButton">{buttonText}</Button>
+                
             </div>
             )
 }

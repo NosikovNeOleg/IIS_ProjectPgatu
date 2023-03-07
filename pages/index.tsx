@@ -17,8 +17,7 @@ export default function Home() {
  
 
   return (
-  
-    <div>
+    <div className="background">
       <Head>
         <title>IIS PGATU</title>
         <link rel="icon" href="/favicon.ico" />
@@ -28,8 +27,6 @@ export default function Home() {
          <WelcomeWindow/>
         </div>
         <Footer/>
-
     </div>
-  
   )
 }

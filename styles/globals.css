@@ -4,7 +4,7 @@
 
 
 .mainWindow {
-    border: 3px solid black;
+    border: 2px solid black;
     box-shadow: 0px 0px 35px gray;
     position: absolute;
     top: 50%;
@@ -16,10 +16,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: white;
+    border-radius: 9px;
+    
 }
 
 .welcomeWindow {
-    border: 3px solid black;
+    border: 2px solid black;
     box-shadow: 0px 0px 35px gray;
     position: absolute;
     top: 50%;
@@ -30,11 +33,19 @@
     z-index: 1;
     display: flex;
     flex-direction: column;
+    background-color: white;
+    border-radius: 9px;
 }
 
 .welcomeText{
     margin-left: 10px;
+    margin-top: 10px;
+    width: 99%;
+}
 
+.finalText{
+    margin-left: 10px;
+    margin-top: 10px;
     width: 99%;
 }
 
@@ -43,7 +54,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 50px;
+    height: auto;
     background-color: white;
     border-top: 2px solid black;
     box-shadow: 0 0 15px gray;
@@ -53,28 +64,33 @@
 
 .header {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    border-bottom: 2px solid black;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+    background-color: white; 
+    border: 2px solid black;
+    border-radius: 8px;
     box-shadow: 0 0 15px rgb(71, 44, 44);
     z-index: 2;
 }
 
 
 .answerButton {
-    margin-right: auto;
     margin-top: auto;
-    bottom: 10px;
+    margin-bottom: 10px;
     left: 50%;
-    
+    margin-right: 10px;
     transform: translate(-50%);
+    background-color:white ;
+    border: 2px solid rgba(59, 98, 239, 1);
+    border-radius: 8px;
 }
 
 .redirect{
-    
-    border: 2px solid black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 
 
@@ -116,7 +132,10 @@
     margin-left: 10px;
     margin-right: 10px;
     word-wrap: break-word;
+}
 
+.bigAnswer{
+    height: 10px;
 }
 
 

@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     
-    <div>
+    <div className="background">
       <Head>
         <title>IIS PGATU</title>
         <link rel="icon" href="/favicon.ico" />

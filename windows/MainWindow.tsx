@@ -3,7 +3,7 @@ import { Question } from "@/questions/Question";
 import { questions } from '@/questions/list_of_questions'
 import { GlobalAnswer } from "@/answers/GlobalAnswer"
 import { answers } from "@/answers/list_of_answers"
-import { Button } from '@nextui-org/react'
+import { Button, Link } from '@nextui-org/react'
 import { useState, useEffect } from 'react';
 import { IViewMain } from '../components/IViewMain';
 
@@ -29,12 +29,12 @@ export default function MainWindow( ) {
                 { view != -1 ? (
                         <Question question={questions[view]}/>
                         ) : (
-                                <GlobalAnswer answers={answers} id={id}/>
+                                <div className="bigAnswer"><GlobalAnswer answers={answers} id={id}/></div>
                         )
                 }
                 {
                 view != -1 ? (
-                        <Button  className="answerButton" auto ghost onPress={ () =>{
+                        <Button  className="answerButton" onPress={ () =>{
                             if (checked != "0"){
                                 answers[number] = {
                                     id : number,
@@ -49,8 +49,13 @@ export default function MainWindow( ) {
                                 setNumber(number => number + 1)
                             }
                         }}>{buttonText}</Button>
-                            ) : ( null )
-                }<p>{id}</p>
+                            ) : (
+                            <Button className="answerButton">
+                                {"Начать заново"}
+                            <Link className="redirect" href="/"/>
+                            </Button> 
+                        )
+                }
                 
             </div>
             )

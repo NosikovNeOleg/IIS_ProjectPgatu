@@ -13,21 +13,23 @@ export default function WelcomeWindow() {
     
     return (
         <div className="welcomeWindow">
-            <div className="welcomeText">
+            
+            <div className="welcomeText text-center text-2xl">
                 {greet1}
             </div>
-            <div className="welcomeText">
+            <div className="welcomeText text-center text-2">
                 {greet2}
             </div>
             
                 
-           
-                <Button className="answerButton" auto ghost>
-                <Link href={"/main"} className="redirect" passHref>
-                    {buttonText}
-                    </Link>
-                </Button>
             
+                
+                <Button className="answerButton">
+                    {buttonText}
+                <Link className="redirect" href="/main"/>
+                    
+                </Button>
+                
         </div>
             )
             }

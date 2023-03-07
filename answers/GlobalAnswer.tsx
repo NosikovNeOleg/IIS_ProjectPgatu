@@ -1,6 +1,7 @@
 import { IViewMain } from "@/components/IViewMain";
 import { MicroAnswer } from "./MicroAnswer";
 import {expertChoice} from "./expertChoice"
+import { Button } from "@nextui-org/react"
 
 
 interface GlobalAnswerProps {
@@ -9,6 +10,8 @@ interface GlobalAnswerProps {
 }
 
 export function GlobalAnswer({answers, id}: GlobalAnswerProps){
+
+    const buttonText = "Начать снова"
 
     var view : number;
     var answer : IViewMain;
@@ -28,9 +31,11 @@ export function GlobalAnswer({answers, id}: GlobalAnswerProps){
                 answers?.map(answer => 
                     <MicroAnswer answer={answer}></MicroAnswer>
                 )}
-                <div className="">
-                    {answer.text}
+                <div className="topBorder"></div>
+                <div className="finalText">
+                    {"Исходя из вышеперечисленных ответов вам подойдёт: " + answer.text}
                 </div>
+                
             </div>
             )
 }

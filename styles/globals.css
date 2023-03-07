@@ -5,48 +5,58 @@
 
 .mainWindow {
     border: 2px solid black;
+    border-radius: 9px;
     box-shadow: 0px 0px 35px gray;
-    position: absolute;
-    top: 50%;
+    position: relative;
+    margin-top: 5%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    height: 70%;
+    transform: translate(-50%);    
+    min-height: 500px;
+    max-height: 70%;
     width: 90%;
     z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: white;
-    border-radius: 9px;
-    
+    background-color: white;   
 }
 
 .welcomeWindow {
     border: 2px solid black;
+    border-radius: 9px;
     box-shadow: 0px 0px 35px gray;
-    position: absolute;
+    position: relative;
+    margin-top: 5%;
+    
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    height: 70%;
+    transform: translate(-50%);
+    min-height: 500px;
+    max-height: 70%;
     width: 90%;
     z-index: 1;
     display: flex;
     flex-direction: column;
     background-color: white;
-    border-radius: 9px;
+    
 }
 
 .welcomeText{
     margin-left: 10px;
     margin-top: 10px;
-    width: 99%;
+    width: 96%;
 }
 
 .finalText{
     margin-left: 10px;
     margin-top: 10px;
     width: 99%;
+}
+
+.html{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .footer {
@@ -59,11 +69,11 @@
     border-top: 2px solid black;
     box-shadow: 0 0 15px gray;
     z-index: 2;
-
 }
 
 .header {
-    position: absolute;
+    position: relative;
+    margin-top: 3%;
     top: 1%;
     left: 50%;
     transform: translate(-50%);
@@ -77,20 +87,22 @@
 
 
 .answerButton {
+    bottom: 10px;
     margin-top: auto;
-    margin-bottom: 10px;
     left: 50%;
     margin-right: 10px;
     transform: translate(-50%);
     background-color:white ;
     border: 2px solid rgba(59, 98, 239, 1);
     border-radius: 8px;
+    z-index: 2;
 }
 
 .redirect{
     width: 100%;
     height: 100%;
     position: absolute;
+    border: 20px solid rgba(0,0 ,0 ,0 );
 }
 
 
@@ -99,10 +111,7 @@
     transform: translate(-50%);
 }
 
-.answerButton:active {
-    left: 50%;
-    transform: translate(-50%);
-}
+
 
 
 .radios {

@@ -51,9 +51,12 @@ export default function MainWindow( ) {
                         }}>{buttonText}</Button>
                             ) : (
                             <Button className="answerButton">
+                                <Link className="redirect" href="/"/>
                                 {"Начать заново"}
-                            <Link className="redirect" href="/"/>
+                                
                             </Button> 
+                            
+                            
                         )
                 }
                 

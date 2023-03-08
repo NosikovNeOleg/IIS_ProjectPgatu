@@ -8,7 +8,7 @@ export default function WelcomeWindow() {
     
 
     const greet1 = "Добро пожаловать в ЭСПВТПИПСДРПП (Экспертная система по выбору технологии и программных средств для разработки программного продукта)!"
-    const greet2 = "Вам необходимо ответить на несколько вопросов после чего система сгенерирует оптимальный вариант, который подойдёт под вашу задачу"
+    const greet2 = "Вам необходимо ответить на несколько вопросов после чего система выберет оптимальный вариант, который подойдёт под вашу задачу"
     const buttonText = "Начать"
     
     return (
@@ -22,12 +22,10 @@ export default function WelcomeWindow() {
             </div>
             
                 
-            
-                
+
                 <Button className="answerButton">
                     {buttonText}
                 <Link className="redirect" href="/main"/>
-                    
                 </Button>
                 
         </div>

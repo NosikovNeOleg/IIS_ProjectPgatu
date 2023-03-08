@@ -99,10 +99,11 @@
 }
 
 .redirect{
-    width: 100%;
+    width: 100px;
     height: 100%;
     position: absolute;
-    border: 20px solid rgba(0,0 ,0 ,0 );
+    border: 425px solid rgba(0,0 ,0,0);
+    
 }
 
 

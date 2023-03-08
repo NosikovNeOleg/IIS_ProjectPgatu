@@ -51,7 +51,7 @@ export default function MainWindow( ) {
                         }}>{buttonText}</Button>
                             ) : (
                             <Button className="answerButton">
-                                <Link className="redirect" href="/"/>
+                                <Link className="redirect" href="/IIS_ProjectPgatu"/>
                                 {"Начать заново"}
                                 
                             </Button> 

@@ -40,6 +40,7 @@ export default function MainWindow( ) {
                                     id : number,
                                     code: number.toString(),
                                     text: questions[view].text,
+                                    picId: "",
                                     answers : [{
                                         a_id : 1,
                                         text: checked}]

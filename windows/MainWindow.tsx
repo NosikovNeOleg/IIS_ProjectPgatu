@@ -29,7 +29,7 @@ export default function MainWindow( ) {
                 { view != -1 ? (
                         <Question question={questions[view]}/>
                         ) : (
-                                <div className="bigAnswer"><GlobalAnswer answers={answers} id={id}/></div>
+                                <div><GlobalAnswer answers={answers} id={id}/></div>
                         )
                 }
                 {

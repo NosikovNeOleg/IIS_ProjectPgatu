@@ -12,7 +12,7 @@
     left: 50%;
     transform: translate(-50%);    
     min-height: 500px;
-    max-height: 70%;
+    max-height: fit-content;
     width: 90%;
     z-index: 1;
     display: flex;
@@ -41,6 +41,10 @@
     
 }
 
+.finalWindow{
+    max-height: fit-content;
+}
+
 .welcomeText{
     margin-left: 10px;
     margin-top: 10px;
@@ -48,6 +52,7 @@
 }
 
 .finalText{
+    position: relative;
     margin-left: 10px;
     margin-top: 10px;
     width: 99%;
@@ -144,8 +149,17 @@
     word-wrap: break-word;
 }
 
-.bigAnswer{
-    height: 10px;
+
+.pic{
+    margin-top: 10px;
+    position: relative;
+    -webkit-box-align:center;
+    -webkit-box-pack:center;
+    display:-webkit-box;
+    
+   
+    margin-bottom: 10px;
+     
 }
 
 

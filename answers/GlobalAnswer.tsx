@@ -2,9 +2,8 @@ import { IViewMain } from "@/components/IViewMain";
 import { MicroAnswer } from "./MicroAnswer";
 import {expertChoice} from "./expertChoice"
 import { Button } from "@nextui-org/react";
-import  * as pictures  from "./pictures/*.png";
-import Image from 'next/image'
-
+import  pictures from "../answers/pictures/1.png";
+import {Images} from "./Images";
 
 interface GlobalAnswerProps {
     answers: IViewMain[]
@@ -17,6 +16,7 @@ export function GlobalAnswer({answers, id}: GlobalAnswerProps){
 
     var view : number;
     var answer : IViewMain;
+    
 
     function findAnswer(elem : IViewMain){
         return elem.code ==  id;
@@ -24,24 +24,8 @@ export function GlobalAnswer({answers, id}: GlobalAnswerProps){
     view = expertChoice?.findIndex(findAnswer)
     answer = expertChoice[view]
     
-    const myLoader = ({ }) => {
-        return `./pictures/`
-      }
+    var src : string
     
-    var hrefPic = "/pictures/" + answer.picId + ".png";
-    hrefPic = "/pictures/1.png";
-
-    const MyImage = () => {
-        return (
-          <Image
-            loader={myLoader}
-            src="1.png"
-            alt="Picture of the author"
-            width={500}
-            height={500}
-          />
-        )
-      }
 
     return (
             <div>
@@ -55,8 +39,11 @@ export function GlobalAnswer({answers, id}: GlobalAnswerProps){
                 <div className="finalText">
                     {"Исходя из вышеперечисленных ответов вам подойдёт: " + answer.text}
                 </div>
-                <Image  src={hrefPic} alt="ЖОПАА" width={1000} height={1000}/>
-                <MyImage></MyImage>
+                <div className="finalText">
+                    {answer.answers[0].text}
+                </div>
+                <Images id={Number(answer.picId) - 1}></Images>
+                
                 
             </div>
             )
